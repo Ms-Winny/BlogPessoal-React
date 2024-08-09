@@ -1,13 +1,4 @@
 import React from 'react';
-<<<<<<< Updated upstream
-import Home from './paginas/home/Home.tsx';
-import './App.css';
-
-
-function App() {
-  return (
-   <Home />
-=======
 import './App.css';
 import Home from './paginas/home/Home';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
@@ -23,7 +14,6 @@ function App() {
         </Routes>
       </BrowserRouter>
     </>
->>>>>>> Stashed changes
   );
 }
 export default App;
