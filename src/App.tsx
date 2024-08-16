@@ -14,6 +14,7 @@ import DeletarTema from './components/temas/deletarTema/DeletarTema.tsx';
 import ListaPostagens from './components/postagens/listaPostagens/ListaPostagens.tsx';
 import FormularioPostagem from './components/postagens/formularioPostagem/FormularioPostagem.tsx';
 import DeletarPostagem from './components/postagens/deletarPostagem/DeletarPostagem.tsx';
+import Perfil from './paginas/perfil/Perfil.tsx';
 
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
               <Route path="/cadastroPostagem" element={<FormularioPostagem />} />
               <Route path="/editarPostagem/:id" element={<FormularioPostagem />} />
               <Route path="/deletarPostagem/:id" element={<DeletarPostagem />} />
+              <Route path="/perfil" element={<Perfil />} />
             </Routes>
           </div>
           <Footer />
