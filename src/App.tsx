@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import 'react-toastify/dist/ReactToastify.css';
 
 import Navbar from './components/navbar/Navbar';
 import Footer from './components/footer/Footer';
@@ -7,20 +8,22 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Login from './paginas/login/Login';
 import Cadastro from './paginas/cadastro/Cadastro';
 import Home from './paginas/home/Home';
+import Perfil from './paginas/perfil/Perfil.tsx';
 import { AuthProvider } from './contexts/AuthContext';
+import { ToastContainer } from 'react-toastify';
 import ListaTemas from './components/temas/listaTemas/ListaTemas.tsx';
 import FormularioTema from './components/temas/formularioTema/FormularioTema.tsx';
 import DeletarTema from './components/temas/deletarTema/DeletarTema.tsx';
 import ListaPostagens from './components/postagens/listaPostagens/ListaPostagens.tsx';
 import FormularioPostagem from './components/postagens/formularioPostagem/FormularioPostagem.tsx';
 import DeletarPostagem from './components/postagens/deletarPostagem/DeletarPostagem.tsx';
-import Perfil from './paginas/perfil/Perfil.tsx';
 
 
 function App() {
   return (
     <>
     <AuthProvider>
+      <ToastContainer />
         <BrowserRouter>
           <Navbar />
           <div className='min-h-[80vh]'>
